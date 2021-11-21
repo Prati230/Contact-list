@@ -1,0 +1,157 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "lastName": "",
+      "email": "",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "lastName": "",
+      "email": "",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "firstName": "pratibhatiwari.avantsoft@gmail.com",
+      "lastName": "Tiwari",
+      "email": "pratibhatiwari.avantsoft@gmail.com"
+    },
+    {
+      "id": 5,
+      "firstName": "p",
+      "lastName": "T",
+      "email": "pratibhatiwari.avantsoft@gmail.com"
+    },
+    {
+      "id": 6,
+      "firstName": "pratibha",
+      "lastName": "tiwari",
+      "email": "pratibhatiwari.avantsoft@gmail.com"
+    },
+    {
+      "id": 7,
+      "firstName": "pratibha",
+      "lastName": "tiwari",
+      "email": "pratibhatiwari.avantsoft@gmail.com"
+    },
+    {
+      "id": 8,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 9,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 10,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 11,
+      "firstName": "pratibhatiwari.avantsoft@gmail.com",
+      "lastName": "Tiwari",
+      "email": ""
+    },
+    {
+      "id": 12,
+      "firstName": "pratibhatiwari.avantsoft@gmail.com",
+      "lastName": "Tiwari",
+      "email": ""
+    },
+    {
+      "id": 13,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 14,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 15,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 16,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 17,
+      "firstName": null,
+      "lastName": null,
+      "email": null
+    },
+    {
+      "id": 18,
+      "firstName": "pratibhatiwari.avantsoft@gmail.com",
+      "lastName": "Tiwari",
+      "email": "pratibhatiwari.avantsoft@gmail.com"
+    },
+    {
+      "id": 19,
+      "firstName": "pratibha",
+      "lastName": "",
+      "email": ""
+    },
+    {
+      "id": 20,
+      "firstName": "pratibha",
+      "lastName": "Tiwari",
+      "email": ""
+    },
+    {
+      "id": 21,
+      "firstName": "Pratibha",
+      "lastName": "Tiwari",
+      "email": "tiwaripratibha230@gmail.com"
+    },
+    {
+      "id": 22,
+      "firstName": "pratibha",
+      "lastName": "tiwari",
+      "email": "pratibha230@gmail.com"
+    },
+    {
+      "id": 23,
+      "firstName": "Pratibha",
+      "lastName": "Tiwari",
+      "email": "pratibhatiwari.avantsoft@gmail.com"
+    },
+    {
+      "id": 24,
+      "firstName": "pratibha",
+      "lastName": "Tiwari",
+      "email": "tiwaripratibha230@gmail.com"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

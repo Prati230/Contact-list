@@ -1,0 +1,82 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h5 style="color: white;"> Contact List</h5>
+        <div class="d-flex" (click) ="addContect()">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add Contact </button>
+
+        </div>
+    </div>
+</nav>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <!-- <th scope="col" *ngIf="contact.image"> Image</th>  -->
+            <th scope="col">First name </th>
+            <th scope="col">Last name </th>
+            <th scope="col">Email ID </th>
+            <th> Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contact of contacts">
+            <!-- <td *ngIf="contact.image">
+                {{contact.image}}
+             </td> -->
+            <td *ngIf="contact.firstName">
+               {{contact.firstName}}
+            </td>
+            <td *ngIf="contact.lastName">
+                {{contact.lastName}}
+             </td>
+             <td *ngIf="contact.email">
+                {{contact.email}}
+             </td>
+            <td>
+                <button (click)="onEdit(contact)" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Edit
+                </button>
+                <button class="btn btn-danger mx-3" (click)="deleteContact(contact)">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" formControlName="firstName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                  <input type="text" formControlName="lastName"   class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3" >
+                    <label for="exampleInputEmail1" class="form-label">Email ID</label>
+                    <input type="email" formControlName="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div *ngIf="formValue.get('email').hasError('email')"  style="color: red;">
+                        Please add Email id 
+                      </div>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" *ngIf="showAddBtn" data-bs-dismiss="modal" class="btn btn-primary" (click)="postContactDetail()"  [disabled]="formValue.invalid || !formValue.dirty">ADD</button>
+          <button type="button" *ngIf="showUpdateBtn" data-bs-dismiss="modal" class="btn btn-primary" (click)="updateContactDetail()"  [disabled]="formValue.invalid || !formValue.dirty">
+              Update
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
